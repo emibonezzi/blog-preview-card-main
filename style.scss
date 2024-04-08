@@ -1,0 +1,91 @@
+$main-font: Figtree, sans-serif;
+$primary-yellow: hsl(47, 88%, 63%);
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-grey: hsl(0, 0%, 50%);
+$neutral-black: hsl(0, 0%, 7%);
+
+body {
+  font-family: $main-font;
+  background-color: $primary-yellow;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  max-width: 350px;
+  background-color: $neutral-white;
+  padding: 23px;
+  border-radius: 20px;
+  outline: 1px black solid;
+  box-shadow: 10px 10px 1px $neutral-black;
+}
+
+.card-image {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 7px 12px;
+  margin: 20px 0px;
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: $primary-yellow;
+}
+
+.card-date,
+.card-badge {
+  font-size: 0.85em;
+}
+
+.card-title {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.card-caption {
+  color: $neutral-grey;
+  font-weight: 500;
+  font-size: clamp(14px, 2.2vw, 16px);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: 800;
+}
+
+.card-footer > img {
+  width: 35px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
